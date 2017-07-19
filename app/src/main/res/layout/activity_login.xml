@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.test.talon.picbrowse.LoginActivity">
+
+    <EditText
+        android:id="@+id/topicID"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="36"/>
+
+    <EditText
+        android:id="@+id/cameraID"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="330108001055"/>
+
+    <EditText
+        android:id="@+id/sort"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="asc"/>
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show"/>
+
+    <Button
+        android:id="@+id/btn_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="download"/>
+    <Button
+        android:id="@+id/btn_showDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="showDownload"/>
+
+</LinearLayout>
