@@ -82,7 +82,7 @@ public class DownLoadActivity extends Activity {
             int index = msg.what < data.size() ? msg.what : 0;
             PicModel img = data.get(index);
             // 切记跳过缓存，不然会造成卡顿
-            Glide.with(DownLoadActivity.this).load("file://" + img.getPhoto()).apply(new RequestOptions().dontAnimate().placeholder(imgPic.getDrawable()).fitCenter()).into(imgPic);
+            Glide.with(DownLoadActivity.this).load("file://" + img.getPhoto()).apply(new RequestOptions().dontAnimate().placeholder(imgPic.getDrawable())).into(imgPic);
 //            imageLoader.displayImage("file://" + img.getPhoto(), imgPic);
             mHandler.sendEmptyMessageDelayed(++index, 100);
         }
