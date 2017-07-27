@@ -29,6 +29,9 @@
         <activity
             android:name=".ShowDownLoadActivity"
             android:screenOrientation="landscape"/>
+        <activity
+            android:name=".ResultActivity"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
