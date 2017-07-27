@@ -37,10 +37,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="download"/>
+
     <Button
         android:id="@+id/btn_showDownload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="showDownload"/>
+
+    <Button
+        android:id="@+id/btn_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="result"/>
 
 </LinearLayout>
