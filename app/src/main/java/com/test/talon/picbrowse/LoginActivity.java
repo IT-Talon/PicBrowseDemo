@@ -24,6 +24,8 @@ public class LoginActivity extends AppCompatActivity {
     Button btnDownload;
     @BindView(R.id.btn_showDownload)
     Button btnShowDownload;
+    @BindView(R.id.btn_result)
+    Button btnResult;
 
     private String mTopicId, mCameraId, mSort;
 
@@ -40,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         mSort = sort.getText().toString().trim();
     }
 
-    @OnClick({R.id.btn_show, R.id.btn_download, R.id.btn_showDownload})
+    @OnClick({R.id.btn_show, R.id.btn_download, R.id.btn_showDownload, R.id.btn_result})
     public void onViewClicked(View view) {
         getData();
         switch (view.getId()) {
@@ -52,6 +54,9 @@ public class LoginActivity extends AppCompatActivity {
                 break;
             case R.id.btn_showDownload:
                 ShowDownLoadActivity.start(LoginActivity.this);
+                break;
+            case R.id.btn_result:
+                ResultActivity.start(LoginActivity.this, mTopicId, mCameraId, mSort);
                 break;
         }
     }

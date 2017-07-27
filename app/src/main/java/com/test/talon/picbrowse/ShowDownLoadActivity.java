@@ -60,7 +60,7 @@ public class ShowDownLoadActivity extends Activity {
 
     private void showImg() {
         data = new ArrayList<>();
-        File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath(), "PicBrowse");
+        File dir = new File(Environment.getExternalStorageDirectory().getAbsolutePath(), "PicBrowse2");
         if (dir.isDirectory()) {
             List<File> imgList = orderByName(dir.getAbsolutePath());
             for (File file : imgList) {

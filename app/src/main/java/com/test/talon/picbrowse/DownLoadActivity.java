@@ -36,12 +36,10 @@ import java.util.concurrent.TimeUnit;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.reactivex.Observable;
-import io.reactivex.ObservableSource;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 import okhttp3.OkHttpClient;
@@ -189,7 +187,7 @@ public class DownLoadActivity extends Activity {
 
                                     @Override
                                     public void onNext(@NonNull Boolean aBoolean) {
-                                        Log.d(TAG, "-------------下载onNext");
+                                        Log.d(TAG, "-------------下载onNext   " + i);
                                         i++;
                                     }
 
