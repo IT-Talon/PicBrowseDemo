@@ -167,7 +167,7 @@ public class ResultActivity extends Activity {
                     public void onNext(@NonNull HttpResponseModel httpResponseModel) {
                         List<PicModel> picList = httpResponseModel.getDataObject(new TypeReference<List<PicModel>>() {
                         });
-                        downloadAllImg(picList.subList(800, 1100));
+                        downloadAllImg(picList); // 所有图片集合3600+
                     }
 
                     @Override
